@@ -22,7 +22,9 @@ class Page(object):
         """
         Return a printable represnetation of the page and all the contents
         """
-        page = """<html>
+        page = """
+           Content-type: text/html\n
+            <html>
             <head>
             <meta charset="utf-8">
             <title>%s</title>
@@ -47,7 +49,9 @@ if __name__ == "__main__":
     p = Page("Test Page")
     p.addContent("<H1>Heading 1</H1>")
     
-    assert str(p) == """<html>
+    assert str(p) == """
+           Content-type: text/html\n
+            <html>
             <head>
             <meta charset="utf-8">
             <title>Test Page</title>
