@@ -38,14 +38,14 @@ class Page(object):
         return page
           
           
-    def addConent(self, content):
+    def addContent(self, content):
         self.content.append(content)
         
     
 if __name__ == "__main__":
     
     p = Page("Test Page")
-    p.addConent("<H1>Heading 1</H1>")
+    p.addContent("<H1>Heading 1</H1>")
     
     assert str(p) == """<html>
             <head>
