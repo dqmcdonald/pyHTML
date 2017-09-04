@@ -83,7 +83,7 @@ if __name__ == "__main__":
     
     t.setCell(0,0, t2)
     
-assert str(t) == """<table>
+    assert str(t) == """<table>
 <tr>
 <td> <table>
 <tr>
