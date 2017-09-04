@@ -74,7 +74,7 @@ if __name__ == "__main__":
 ></tr>
 </table>
 """
-
+    # Test nested cell
     t2 = Table(2,2)
     t2.setCell(0,0, "one")
     t2.setCell(0,1, "two")
