@@ -30,7 +30,7 @@ class Page(object):
             <body>
             """ % self.title
         for c in self.content:
-            page += c
+            page += str(c)
         page += """
           </body>
           </html>
